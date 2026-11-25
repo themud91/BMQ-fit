@@ -1,0 +1,65 @@
+:root {
+  --brand: #b3202a;
+}
+
+body {
+  background: #f4f4f6;
+}
+
+.app-header {
+  background: #fff;
+  border-bottom: 3px solid var(--brand);
+  z-index: 1020;
+}
+
+.app-header h1 {
+  color: var(--brand);
+  font-weight: 700;
+}
+
+.ex-card {
+  cursor: pointer;
+  border: 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+.ex-card:active {
+  transform: scale(0.98);
+}
+
+.ex-thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #fff;
+}
+
+.ex-thumb-missing,
+.detail-img-missing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 16 / 9;
+  background: #e9e9ee;
+  color: #6c6c78;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.ex-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.badge-cat {
+  background: var(--brand);
+}
+
+@media (prefers-color-scheme: dark) {
+  body { background: #15151a; }
+  .app-header { background: #1f1f26; }
+  .ex-thumb { background: #fff; }
+}
