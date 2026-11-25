@@ -11,7 +11,10 @@
 <body>
   <header class="app-header sticky-top">
     <div class="container py-2">
-      <h1 class="h5 mb-2">Exercise Guide</h1>
+      <div class="d-flex justify-content-between align-items-center mb-2">
+        <h1 class="h5 mb-0">Exercise Guide</h1>
+        <button type="button" class="btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#running">Running guide</button>
+      </div>
       <input id="search" type="search" class="form-control mb-2" placeholder="Search exercise" autocomplete="off">
       <div class="row g-2">
         <div class="col-6">
@@ -41,6 +44,64 @@
           <img id="detail-img" class="img-fluid rounded w-100 mb-3" alt="">
           <p id="detail-tags" class="mb-2"></p>
           <p id="detail-text" class="mb-0"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="running" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5">Running guide</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h3 class="h6 text-danger">Session structure</h3>
+          <ul>
+            <li>Warm up 5 min, walking or light running.</li>
+            <li>Cool down walking, 2 to 5 min.</li>
+            <li>Easy to moderate run, 10 to 15 min: find a pace you can maintain for the entire time.</li>
+            <li>Moderate cardio of 10 min before strength work: run if possible, or choose a cardio machine.</li>
+          </ul>
+
+          <h3 class="h6 text-danger">Types of running sessions</h3>
+          <ul>
+            <li>Interval run: alternate moderate running with hard running. Example: 5 times 3 min moderate and 1 min hard, progressing to 8 times 2 min moderate and 30 s maximum effort.</li>
+            <li>Continuous run: steady moderate effort, from 25 min up to 35 min.</li>
+            <li>Goal at the end of the program: 5 km at a pace of 6 min/km.</li>
+          </ul>
+
+          <h3 class="h6 text-danger">Effort guide</h3>
+          <ul>
+            <li>Easy: you can carry a conversation and feel you could go for hours.</li>
+            <li>Moderate: breathing heavily, you can hold a short conversation.</li>
+            <li>Hard: short of breath, you can speak only a sentence.</li>
+            <li>Maximum: you cannot talk and cannot hold it for more than a very short time.</li>
+          </ul>
+
+          <h3 class="h6 text-danger">Loaded walking</h3>
+          <ul>
+            <li>Goal: 5 km with a 45 lb backpack in 60 min, at 5 km/h (12 min/km).</li>
+            <li>Walking looks easy, but if you are not used to the volume required, you are at risk of injuries that interrupt your training.</li>
+          </ul>
+
+          <h3 class="h6 text-danger">Running warm up drills</h3>
+          <p>Walk, skip A's, hip mobility, dorso mobility, thoracic mobility, prone angel and glute bridge. Also butt kickers, high knees, side shuffle and dorsiflexion to calf raise. Most of these are in the exercise list.</p>
+
+          <h3 class="h6 text-danger">Fitness check</h3>
+          <p>Run or walk 1000 m as fast as possible and record your time to compare before and after a 6 week block.</p>
+
+          <h3 class="h6 text-danger">Fueling</h3>
+          <ul>
+            <li>2 to 4 hours before: a balanced meal rich in carbohydrate with some protein and low fat, and about 300 to 600 mL of fluid.</li>
+            <li>1 to 2 hours before: a snack high in carbohydrate, and about 150 to 350 mL of fluid.</li>
+            <li>During exercise under 1 hour: drink water to thirst.</li>
+            <li>During exercise over 2 hours: drink 150 to 350 mL every 15 to 20 min, with a source of carbohydrate and minerals. Over 3 hours, include sodium.</li>
+            <li>After exercise: drink water as soon as possible, and eat a snack or meal with carbohydrate and protein within 2 hours.</li>
+            <li>Drink 1.5 L of water for every kg of weight lost during exercise.</li>
+            <li>Urine should be pale yellow. Do not try new foods or drinks before a race or a long march.</li>
+          </ul>
         </div>
       </div>
     </div>
